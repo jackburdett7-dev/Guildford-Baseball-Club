@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Guildford Mavericks Baseball Club</title>
+  <meta name="description" content="Get in touch with the Guildford Mavericks. Kings College, Guildford. Email info@guildfordbaseball.co.uk. Directions, venue hire, and general enquiries.">
+  <link rel="canonical" href="https://guildfordbaseball.co.uk/contact.html">
+  <meta property="og:title" content="Contact the Guildford Mavericks">
+  <meta property="og:url" content="https://guildfordbaseball.co.uk/contact.html">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-info-card {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      color: var(--white);
+      position: sticky;
+      top: 100px;
+    }
+    .contact-info-card h3 { color: var(--white); margin-bottom: 1.5rem; }
+    .contact-detail {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .contact-detail__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .contact-detail__text h5 { color: var(--white); font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.25rem; }
+    .contact-detail__text p, .contact-detail__text a { color: rgba(255,255,255,0.72); font-size: 0.92rem; margin: 0; }
+    .contact-detail__text a:hover { color: var(--orange); }
+
+    .map-embed {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 1.5rem;
+      aspect-ratio: 16/9;
+      background: var(--navy-light);
+    }
+    .map-embed iframe { width: 100%; height: 100%; border: 0; }
+
+    .hire-card {
+      background: var(--off-white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      border-left: 5px solid var(--orange);
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-info-card { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/logo.jpg" alt="Guildford Mavericks logo">
+          <div class="nav__logo-text">Guildford Mavericks<span>Baseball &amp; Softball</span></div>
+        </a>
+        <ul class="nav__links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="juniors.html">Juniors</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="join.html" class="btn btn--primary btn--pulse nav__cta">Join the Club &rarr;</a>
+        <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="about.html">About</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="juniors.html">Juniors</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn--primary">Join the Club &rarr;</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="container fade-up">
+      <span class="overline" style="color: var(--orange);">We'd love to hear from you</span>
+      <h1>Get in touch.</h1>
+      <p>Questions about joining, junior sessions, or hiring our diamond — we're here.</p>
+    </div>
+  </div>
+
+  <section class="section section--white">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info card (sticky) -->
+        <div class="contact-info-card fade-in">
+          <h3>Club Details</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📍</div>
+            <div class="contact-detail__text">
+              <h5>Home Ground</h5>
+              <p>Kings College School<br>Guildford, Surrey</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">✉️</div>
+            <div class="contact-detail__text">
+              <h5>General Enquiries</h5>
+              <a href="mailto:info@guildfordbaseball.co.uk">info@guildfordbaseball.co.uk</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">⏰</div>
+            <div class="contact-detail__text">
+              <h5>Adult Training</h5>
+              <p>Thursday evenings<br>Kings College, Guildford</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🧢</div>
+            <div class="contact-detail__text">
+              <h5>Junior Sessions</h5>
+              <p>Saturday mornings<br>Kings College, Guildford</p>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <h5 style="color: rgba(255,255,255,0.5); font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem;">Follow the Mavericks</h5>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <a href="https://www.facebook.com/GuildfordMavs" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.65); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">f&nbsp; Facebook — @GuildfordMavs</a>
+              <a href="https://www.instagram.com/guildfordmavs/" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.65); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">&#9643;&nbsp; Instagram — @guildfordmavs</a>
+              <a href="https://x.com/GuildfordMavs" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.65); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">&#120143;&nbsp; X / Twitter — @GuildfordMavs</a>
+              <a href="https://www.youtube.com/channel/UCzcyfif9NStUezIT4YeLSVA" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.65); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">&#9654;&nbsp; YouTube — Guildford Mavericks</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: map + form + hire -->
+        <div>
+
+          <!-- Map -->
+          <div class="fade-up" id="directions">
+            <span class="overline">Getting Here</span>
+            <h2 style="margin-bottom: 0.75rem;">Kings College, Guildford</h2>
+            <p style="color: var(--muted); margin-bottom: 1.5rem;">Our home ground is at Kings College School in Guildford, Surrey. Well served by public transport from Guildford town centre and with on-site parking.</p>
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.5!2d-0.5791!3d51.2432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d1234abcd%3A0x1!2sKing's+College+School%2C+Guildford!5e0!3m2!1sen!2suk!4v1680000000000"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Kings College, Guildford — Mavericks home ground">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Chat Invite -->
+          <div style="margin-top: 3.5rem;" class="fade-up">
+            <span class="overline">Talk to us</span>
+            <h2 style="margin-bottom: 0.75rem;">Get your question answered instantly</h2>
+            <p style="color: var(--muted); margin-bottom: 2rem;">Our AI club assistant knows everything about the Mavericks — joining, fixtures, junior sessions, venue hire, and more. Available 24/7.</p>
+            <div class="chat-invite">
+              <span class="chat-invite__icon">⚾</span>
+              <h3>Chat with our Club Assistant</h3>
+              <p>Ask anything about joining, training times, junior sessions, or hiring our diamond. Instant answers, any time.</p>
+              <a href="join.html" class="btn btn--primary" style="font-size: 1.05rem; padding: 0.9rem 2rem;">Open Club Chat &rarr;</a>
+              <p class="fallback">Prefer email? <a href="mailto:info@guildfordbaseball.co.uk">info@guildfordbaseball.co.uk</a></p>
+            </div>
+          </div>
+
+          <!-- Hire section -->
+          <div class="hire-card fade-up" id="hire">
+            <span class="overline" style="color: var(--orange);">Diamond Hire</span>
+            <h3 style="margin-bottom: 0.5rem;">Hire our baseball diamond</h3>
+            <p style="color: var(--muted); margin-bottom: 1.2rem;">The Mavericks diamond at Kings College is available for hire by other baseball teams, sporting events, and community groups when not in use by the club. Please get in touch for availability and pricing.</p>
+            <a href="mailto:info@guildfordbaseball.co.uk?subject=Diamond%20Hire%20Enquiry" class="btn btn--primary">Enquire About Hire &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick links -->
+  <section class="section section--dark">
+    <div class="container text-center fade-up">
+      <span class="overline" style="color: var(--orange);">Ready to play?</span>
+      <h2>Your first training is free.</h2>
+      <p style="color: rgba(255,255,255,0.72); margin-inline: auto; margin-bottom: 2rem;">The fastest way to get started is to chat with our AI club assistant — available 24/7 to answer questions and point you in the right direction.</p>
+      <a href="join.html" class="btn btn--primary">Chat with Our Club Assistant &rarr;</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.jpg" alt="Guildford Mavericks">
+          <p>Guildford's only baseball and softball club, playing and coaching since 1992 at Kings College, Surrey.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/GuildfordMavs" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://x.com/GuildfordMavs" target="_blank" rel="noopener" aria-label="Twitter/X">&#120143;</a>
+            <a href="https://www.instagram.com/guildfordmavs/" target="_blank" rel="noopener" aria-label="Instagram">&#9643;</a>
+            <a href="https://www.youtube.com/channel/UCzcyfif9NStUezIT4YeLSVA" target="_blank" rel="noopener" aria-label="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Club</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="join.html">Join the Club</a></li>
+            <li><a href="schedule.html">2026 Schedule</a></li>
+            <li><a href="juniors.html">Junior Programme</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Teams</div>
+          <ul class="footer__links">
+            <li><a href="about.html#teams">Guildford Mavericks</a></li>
+            <li><a href="about.html#teams">Guildford Millers</a></li>
+            <li><a href="about.html#teams">Gold Cats</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <ul class="footer__links">
+            <li><a href="mailto:info@guildfordbaseball.co.uk">info@guildfordbaseball.co.uk</a></li>
+            <li><a href="contact.html">Get Directions</a></li>
+            <li><a href="contact.html#hire">Hire Our Diamond</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Guildford Baseball &amp; Softball Club. All rights reserved.</span>
+        <span class="footer__est">Est. 1992 &mdash; Guildford Mavericks</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/chatbot-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

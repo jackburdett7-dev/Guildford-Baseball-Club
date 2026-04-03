@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Guildford Mavericks</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .error-page {
+      min-height: 100svh;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--white);
+    }
+    .error-page__num {
+      font-family: var(--font-serif);
+      font-size: clamp(6rem, 20vw, 12rem);
+      color: var(--red);
+      line-height: 1;
+      opacity: 0.3;
+      margin-bottom: -1rem;
+    }
+    .error-page h1 { color: var(--white); margin-bottom: 0.75rem; }
+    .error-page p { color: rgba(255,255,255,0.65); margin-bottom: 2.5rem; margin-inline: auto; }
+  </style>
+</head>
+<body>
+  <nav class="nav scrolled">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/logo.jpg" alt="Guildford Mavericks logo">
+          <div class="nav__logo-text">Guildford Mavericks<span>Baseball &amp; Softball</span></div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="error-page">
+    <div class="container">
+      <div class="error-page__num">404</div>
+      <h1>Foul ball.</h1>
+      <p>That page has gone out of bounds. Let's get you back on the diamond.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="index.html" class="btn btn--primary">Back to Home &rarr;</a>
+        <a href="join.html" class="btn btn--outline">Join the Club</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
