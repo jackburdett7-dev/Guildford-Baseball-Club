@@ -305,7 +305,9 @@
 
     const msg = document.createElement('div');
     msg.className = 'gbsc-msg gbsc-msg--' + type;
-    msg.innerHTML = text.replace(/\n/g, '<br>');
+    msg.innerHTML = text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\n/g, '<br>');
     messagesEl.appendChild(msg);
     messagesEl.scrollTop = messagesEl.scrollHeight;
     return msg;
@@ -368,7 +370,7 @@
         );
       }
     } catch (err) {
-      addMessage("Debug error: " + err.toString(), 'bot');
+      addMessage("Sorry, I'm having trouble connecting right now. Please email <a href='mailto:info@guildfordbaseball.co.uk' style='color:#c80025'>info@guildfordbaseball.co.uk</a> and we'll get back to you shortly.", 'bot');
     } finally {
       isWaiting = false;
       sendBtn.disabled = false;
