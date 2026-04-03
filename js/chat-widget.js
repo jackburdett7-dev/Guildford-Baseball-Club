@@ -368,7 +368,7 @@
         );
       }
     } catch (err) {
-      addMessage("Sorry, I'm having trouble connecting right now. Please email <a href='mailto:info@guildfordbaseball.co.uk' style='color:#c80025'>info@guildfordbaseball.co.uk</a> and we'll get back to you shortly.", 'bot');
+      addMessage("Debug error: " + err.toString(), 'bot');
     } finally {
       isWaiting = false;
       sendBtn.disabled = false;
